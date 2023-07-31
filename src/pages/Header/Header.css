@@ -1,0 +1,61 @@
+.autopulse-header {
+    overflow: hidden;
+    height: 98px;
+    left: 0;
+    top: 0;
+    background: #F9F9F9;
+}
+
+.autopulse-header .artboard {
+    width: 200px;
+    height: 98px;
+    left: 0px;
+}
+
+.artboard img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.artboard .autopulse-tag {
+    position: relative;
+    top: 33px;
+    height: 34;
+    width: 167;
+    display: flex;
+}
+
+.autopulse-tag p {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p strong {
+    color: #3bd615;
+}
+
+@media screen and (max-width:550px) {
+    .autopulse-header {
+        height: 70px;
+    }
+
+    .artboard img {
+        float: left;
+        height: 80px;
+        width: 80px;
+    }
+
+    .artboard .autopulse-tag {
+        top: 21px;
+    }
+
+    .autopulse-tag p {
+        font-size: 20px;
+    }
+}

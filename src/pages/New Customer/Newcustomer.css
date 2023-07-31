@@ -1,0 +1,445 @@
+/* Import Google font - Poppins */
+
+/* form css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* all input size  */
+input {
+    height: 28px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(59, 214, 21, 0.3);
+    border-radius: 5px;
+}
+
+.container {
+    position: relative;
+    width: 1150px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+}
+
+.container form {
+    padding: 10px 30px;
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container form .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container form .column-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.column .input-box-file{
+    position: relative;
+}
+
+.column-1 .input-date {
+    display: flex;
+    width: 28.1rem;
+}
+
+.column-1 .input-box-1 {
+    display: flex;
+    width: 55rem;
+}
+
+.column .input-box-1 {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+}
+
+.column .input-box-n{
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    margin: 15px 50px 10px 0px;
+}
+
+.input-box-n input{
+        background-color: #f9f9f9;
+        border: 1px solid rgba(59, 214, 21, 0.3);
+        border-radius: 5px;
+        width: 20rem;
+        padding: 10px;
+}
+
+.column-1 .input-box {
+    display: flex;
+    width: 280px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.column-1 .input-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .input-box-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.input-box-adr{
+    width: 100%;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.input-box-adr textarea{
+    width: 85%;
+    height: auto;
+    padding: 10px;
+}
+
+.input-date input {
+    width: 300px;
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(59, 214, 21, 0.3);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.input-box-name input {
+    width: 650px;
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(59, 214, 21, 0.3);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.column-1 .input-box select {
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(59, 214, 21, 0.3);
+    border-radius: 5px;
+    font-size: small;
+}
+
+.input-box-1 input {
+    width: 130px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(59, 214, 21, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-box-1,
+.input-box,
+.input-box-name :focus {
+    outline: none;
+}
+
+.input-date label {
+    margin-top: 13px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+label img {
+    height: 18px;
+    width: 25px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+label img {
+    height: 18px;
+    width: 25px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+input:not(:placeholder-shown) {
+    color: #b5b4e7;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.add-button{
+    height: 2rem;
+    width: 11rem;
+    float: right;
+    margin-bottom: 2rem;
+}
+
+.add-button button{
+    background-color: #3bd615;
+    color: black;
+    height: 2rem;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+/* .container {
+    position: relative;
+    max-width: 80rem;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.container .form {
+    margin-top: 0;
+    margin: 10px 20px;
+}
+
+.form :where(.input-box) {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form :where(.input-box-1){
+    width: 50%;
+    margin-top: 10px;
+}
+
+.form :where(.input-box-2) {
+    width: 100%;
+    margin-top: 10px;
+}
+input, textarea{
+    background-color: #f9f9f9;
+}
+
+.input-box label {
+    font-weight: 600;
+    color: #333;
+}
+
+.input-box-1 label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 38px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #3bd615;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+.form :where(.input-box-1 input) {
+    position: relative;
+    height: 38px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #3bd615;
+    border-radius: 6px;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.form :where(.input-box-2 input) {
+    position: relative;
+    height: 38px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #3bd615;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+.form :where(.input-box textarea) {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #3bd615;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 10px;
+}
+
+.form .gender-box {
+    margin-top: 10px;
+}
+
+.gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #707070;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button:hover {
+    background:#707070;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+
+    .container {
+        border: none;
+    }
+}
+
+*/
+/* form css ends */
+
+/* documents css starts */
+
+.box-right {
+    position: relative;
+    /* border: 1px solid #d9d9d9;
+    border-radius: 10px; */
+    flex-grow: 2;
+    max-width: 58rem;
+}
+
+.box-right .doc {
+    height: 20rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.upload-btn {
+    background-color: #3bd615;
+    color: black;
+    height: 45px;
+    width: 13rem;
+    border-radius: 5px;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+/* documents css ends */
+
+/* family member add css starts */
+
+.family-mem {
+    border: 1px solid #d9d9d9;
+    max-width: 58rem;
+    width: 100%;
+    border-radius: 10px;
+    height: 26rem;
+    flex-grow: 1;
+}
+
+/* family member add css ends */

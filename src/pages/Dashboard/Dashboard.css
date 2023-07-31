@@ -1,0 +1,17 @@
+.card-1{
+    display:flex;
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+.card-1 .content{
+    width: 50%;
+    height: 40%;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.content p{
+    color: #7c8db5;
+}
